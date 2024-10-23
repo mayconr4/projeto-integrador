@@ -10,26 +10,32 @@
 <body>
 
     <header>
-        <h1>CrossLoop</h1>
-
+        <div class="limitador">
+            <h1>CrossLoop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Aqui menu do topo para arrumar no css para tirar as bolinhas e javaScript -->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="quem-somos.html">Quem Somos</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="suporte.html">Suporte</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-    </nav>
+
+
     <!-- falta a imagem -->
     <main>
         <!-- Temos que colocar a Imagem ao lado do texto no Css -->
         <h2>Nossos Serviços</h2>
         <img src="imagens/foto 11.PNG" alt="">
 
-        <p>Arquitetura de Processos e Soluções
+        <h3>Arquitetura de Processos e Soluções</h3>
+
+        <p>
             Os arquitetos de soluções avaliam, definem e melhoram seu processo de negócios digital e
             arquitetura de solução </p>
 
@@ -51,70 +57,85 @@
         </ul>
 
         <hr>
-        <h2>Tendências de aplicações da Engenharia</h2>
+        <h3>Tendências de aplicações da Engenharia</h3>
 
-        <!-- Abaixo os cards que precisa deixar lado a lador de 2 em 2 -->
-         
-        <h3>Internet das Coisas</h3>
-        <p>Projete dispositivos IOT inteligentes baseados no gêmeo digital
-            conceito para melhorar o produto
-            manutenção e design de produto. </p>
+        <!-- Abaixo os cards que precisa deixar lado a lador de 2 em 2 
+             sugestão para organizar card por card podemos numeraloa de 1 a 6 com divs -->
 
-        <h3>Hibridização e Eletrificação
-        </h3>
-        <p>
-            Avaliar virtualmente e validar fisicamente
-            desempenho enquanto equilibra atributos
-            durante a integração.</p>
+        <div class="card-1">
+            <h4>Internet das Coisas</h4>
+            <p>Projete dispositivos IOT inteligentes baseados no gêmeo digital
+                conceito para melhorar o produto
+                manutenção e design de produto.
+            </p>
+        </div>
 
-        <h3>Sistemas Autônomos</h3>
-        <p>Verificação e balanceamento do projeto de controle de carga antecipada
-            segurança, conforto e eficiência de combustível
-        </p>
-        <h3>Engenharia de Fluxo de trabalho</h3>
-        <p>Simplifique os processos de negócios e gerencie vários domínios
-            desenvolvimento e fabricação.
-        </p>
-        <h3>Eficiência da transmissão
-        </h3>
-        <p>Rastreie o equilíbrio energético do seu sistema de transmissão, resolva problemas e mantenha outros
-            atributos de desempenho em cheque.</p>
-        <h3>Fabricação Aditiva
-        </h3>
-        <p>Leve a produção para o próximo nível e realize o produto
-            ideias desde o design até a impressão, apoiando todo o processo de fabricação aditiva. </p>
+        <div class="card-2">
+            <h4>Hibridização e Eletrificação
+            </h4>
+            <p>
+                Avaliar virtualmente e validar fisicamente
+                desempenho enquanto equilibra atributos
+                durante a integração.
+            </p>
+        </div>
+        
+        <div class="card-3">
+            <h4>Sistemas Autônomos</h4>
+            <p>Verificação e balanceamento do projeto de controle de carga antecipada
+                segurança, conforto e eficiência de combustível
+            </p>
+        </div>
+
+        <div class="card-4">
+            <h4>Engenharia de Fluxo de trabalho</h4>
+            <p>Simplifique os processos de negócios e gerencie vários domínios
+                desenvolvimento e fabricação.
+            </p>
+        </div>
+
+        <div class="card-5">
+            <h4>Eficiência da transmissão
+            </h4>
+            <p>Rastreie o equilíbrio energético do seu sistema de transmissão, resolva problemas e mantenha outros
+                atributos de desempenho em cheque.</p>
+        </div>
+
+        <div class="card-6">
+            <h4>Fabricação Aditiva
+            </h4>
+            <p>Leve a produção para o próximo nível e realize o produto
+                ideias desde o design até a impressão, apoiando todo o processo de fabricação aditiva. </p>
+        </div>
+
+
+
 
 
 
 
     </main>
 
-
-</body>
-
-</html>
-<!-- Coloquei hr mais para separar mas podemos modificar -->
-<hr>
-<footer>
-    <h1>CrossLoop</h1>
-    <div>
-        <h4>Mapa Do Site</h4>
-        <ul>
+    <!-- Coloquei hr mais para separar mas podemos modificar -->
+    <hr>
+    <footer>
+        <!---colocar o logo aqui-->
+        <div>
+            <h3>Mapa Do Site</h3>
             <ul>
                 <!-- tirar bolinhas no css -->
-                <li><a href="">Home</a></li>
-                <li><a href="">Quem Somos</a></li>
-                <li><a href="">Serviços </a> </li>
-                <li><a href="">Suporte</a> </li>
-                <li><a href="">Contato </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="servicos.html">Serviços </a> </li>
+                <li><a href="suporte.html">Suporte</a> </li>
+                <li><a href="contato.html">Contato </a></li>
             </ul>
-        </ul>
-    </div>
-    <hr>
-    <div class="footer-bottom">
-        <p>Copyright © 2024 Crosslop | Powered by CrossLoop</p>
-    </div>
-</footer>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Crosslop | Powered by CrossLoop</p>
+        </div>
+    </footer>
 
 </body>
 
