@@ -3,13 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-
-:root{
-    --cor-titulo:black;
-    --cor-fundo:#f8f8f8;
-    --cor-clara:white; 
-    --cor-card:#273041;
 }
 
 /* Estilização do body */
@@ -17,26 +10,56 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color:var(--cor-fundo); /* Cor de fundo suave */
+    background-color: #f8f8f8; 
 }
 
 /* Estilização do cabeçalho */
 header {
-    background-color:var(--cor-clara); 
+    background-color: white; 
    
     padding: 20px 0;
-} 
+}  
+
+.topo {  
+   
+    z-index: 5;
+    
+    position: sticky;
+    top: 0;   
+    background-color: white; 
+
+
+    
+    .limitador { 
+        height: 12vh;   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+           
+    }       
+
+}  
 
 .link-menu{
-    color:var(--cor-titulo);
+    a {
+        color: var(--cor-escura);
+        font-weight: bold;
+        /* background-color: yellow; */
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       } 
 }
 
 /* Flexbox para alinhar título e menu */
 .limitador {
-    display: flex;
+    /* display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 0 20px; 
+    padding: 0 20px;   */
+    width: 95vw;
+    margin: auto;
 }
 
 header h1 {
@@ -50,7 +73,7 @@ nav ul {
 
 
 nav ul li {
-    margin: 0 15px; /* Espaçamento entre itens do menu */
+    margin: 0 15px; 
 }
 
 nav ul li a {
@@ -59,53 +82,104 @@ nav ul li a {
     font-weight: bold;
 }
 
+article {
+    margin-bottom: 20px; 
+} 
+h2{text-align: center;}
+
+h2, h3, h4 {
+    margin-bottom: 10px; 
+    
+}
 /* Estilização do main */
- /* main {
+/* main {
     padding: 20px;
-    max-width: 800px; 
+    max-width: 900px; 
     margin: 20px auto; 
     background-color: #fff; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
- 
- }  */
-article {
-    margin-bottom: 20px; 
-}
 
-h2, h3, h4 {
-    margin-bottom: 10px; 
-    text-align: center;
-}
 
+} */
 /* Estilização dos botões */
-.btn-saiba-mais {
+.btn-saiba-mais{
     display: inline-block;
-    background-color: #b1b1b1; 
+    background-color: #9D9D9D; 
     color: #fff;
-    padding: 10px 15px;
-    margin-top: 10px; 
-    text-decoration: none;
-    border-radius: 8px; 
-    transition: background-color 0.3s ease; /
-} 
-
-.btn-contato {
-    display: inline-block;
-    background-color: #223044; 
-    color: #fff;
-    padding: 10px 15px;     
+    padding: 8px 15px;
     margin-top: 10px; 
     text-decoration: none;
     border-radius: 8px; 
     transition: background-color 0.3s ease; 
-   
+    /* text-align: left; */
+}    
+
+.btn-contato{  
+    background-color: #223044;
+    color: #fff;
+    padding: 8px 15px;
+    margin-top: 10px; 
+    text-decoration: none;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    padding-bottom: 5px;
 } 
 
+.destaque{ /*refazer*/
+    height: 500px; 
+    width: 100%;   
+    background-image: url(../imagens/DeWatermark.ai_1729858784319.png);
+       
+    background-size: cover;
+    background-repeat: no-repeat; 
+     /* background-position: center center; */
+    background-attachment: fixed; 
+   
+   
+    /* background-size: cover; */
+    /* background-attachment:fixed ; fixa o item */
+    /* position: sticky;         */
+}   
 
+/* .destaque{  
+
+    height: 88vh; 
+    background-attachment:fixed ; 
+    position: sticky;        
+    display: flex; 
+    flex-direction: column;      
+    justify-content: center;
+    align-items: center;      
+} */
+.padding-img{
+    /* padding-left: 420px;  */
+    /* padding-right: ; */
+  
+}  
+
+/* .emexplo{
+  
+} */
+
+.espacamento{
+    padding-left: 200px;  
+    padding-right: 200px;
+    text-align: center;
+}
+
+
+
+.lista{
+    text-align: left;
+    padding-left: 60px;
+}
+.link-menu{
+  color: black;
+}
 
 .btn-saiba-mais:hover, .btn-contato:hover {
-    background-color: #214e88;
+    background-color: #417195;
 }
 
 /* Estilização do rodapé */
@@ -114,12 +188,6 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-} 
-
-.img-index{
- background-image: url(/imagens/imagem-13.png);
- background-attachment:fixed ;
- height: 50vh;
 }
 
 footer h3 {
@@ -133,11 +201,10 @@ footer ul {
 
 footer ul li {
     margin: 5px 0; 
-} 
+}
 
-.lista{
-    text-align: left;
-    padding-left:20px;
+a { text-decoration: none;
+    color: aliceblue;
 }
 
 /* Responsividade */
@@ -161,14 +228,43 @@ img { width: 750px;}
     color: white;
 
     margin-bottom: 30px;
-    background-color: var(--cor-card);
+    background-color: #273041;
     width: 350px;
     border-radius: 5px ;
-    text-align: center;
+    text-align: center; 
    
-} 
+}  
+
+.centralizar {
+   text-align: left;
+}
 
 .exemplo{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;     
+    
+}
+
+/* Estilização do h3 pagina index */
+.caixa1 {
+    background-color: #223044;
+    color: white;    
+    /* padding: 30px; */ 
+    /* max-width: 650px; */
+    /* max-width: 650px;*/
+    
+    height: 13vh;
+}
+
+.caixa2 {
+    background-color: #214e88;
+    color: white; 
+    height: 12vh; 
+    /* max-width:  */
+    
+}
+
+/* Botão Contato pagina index */
+.contato {
+    text-align: center;
 }
