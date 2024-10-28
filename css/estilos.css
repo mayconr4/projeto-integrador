@@ -141,12 +141,21 @@ h2, h3, h4 {
     background-size: cover;
     background-repeat: no-repeat; 
      /* background-position: center center; */
-    background-attachment: fixed; 
+    background-attachment: fixed;  
+    display: flex; 
+    flex-direction: column;      
+    justify-content: center;
+    align-items: center;      
    
     h2 { 
         color: white;
-        text-align: center;
-    }
+        text-align: center; 
+        font-size: 200px; 
+
+        p{
+            color: white;
+        }
+    } 
    
     /* background-size: cover; */
     /* background-attachment:fixed ; fixa o item */
@@ -287,26 +296,89 @@ img { width: 750px;}
     text-align: center;
 } 
 
-.content-1{
+/* .content-1{
     display: flex;  
     padding-left: 80px;
     padding-top: 20px;
      line-height: 30px; 
-     /* padding-right: 100px; */
-    /* padding: 20px; */
+     
+    
    section{
   
    }
 }  
 .img-suporte{
     width: 800px; 
-    /* padding-right: 30px; */
+    
      height: 325px;
      padding-left: 30px;
      position: relative;
 } 
 .content-2{
     display: flex;
-    /* line-height: 20px; */
+
+} */
+/* codigo heloisa */
+.btn-fotos {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+} 
+
+ 
+.texto {
+    flex: 1;
+} 
+.texto-estrategia{
+    line-height: 45px;
+}
+ 
+.btn-fotos img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}   
+
+/* maycon */
+.btn-fotos-r img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+} 
+.img-edit{
+    height: 137px;
+    width: 25vw;
+} 
+.btn-fotos-r {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 100px;
+}
+ 
+.separador{
+    border: solid 1px; 
+    padding-bottom: 10px;
 }
 
+.footer-bottom{
+    padding-top: 20px;
+} 
+.mapa-do-site{
+    padding-left:100px ;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .btn-fotos {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .btn-fotos img {
+        max-width: 100%;
+    }
+}
