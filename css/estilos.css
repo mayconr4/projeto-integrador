@@ -335,7 +335,7 @@ padding-left:5vw ;
     /* Quebra o container  caso não tenha mais espaço
     para o layout lado lado.*/
     flex-wrap: wrap; 
-    /*  lacuna  entre elementos  */
+     /* lacuna  entre elementos  */
     gap: 10px; 
     flex:auto;
 }
@@ -357,4 +357,12 @@ padding-left:5vw ;
     } 
 
     
+} 
+
+.espacamento-menu{
+    
+}
+
+.logo{
+
 }
