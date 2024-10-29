@@ -1,53 +1,45 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html { font-size: 16px; } 
-
-*h1{
-    font-family: "Readex Pro";
-}
-img {max-width: 100%;}
-
 /* Estilização do body */
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f8f8; 
+    background-color: #f8f8f8;
 }
 
 /* Estilização do cabeçalho */
 header {
-    background-color: white; 
-   
+    background-color: white;
+
     padding: 20px 0;
-}  
+}
 
-.topo {  
-   
+.topo {
+
     z-index: 5;
-    
+
     position: sticky;
-    top: 0;   
-    background-color: white; 
+    top: 0;
+    background-color: white;
 
 
-    
-    .limitador { 
-        height: 12vh;   
+
+    .limitador {
+        height: 12vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
-           
-    }       
 
-}  
+    }
 
-.link-menu{
+}
+
+.link-menu {
     a {
         color: var(--cor-escura);
         font-weight: bold;
@@ -56,7 +48,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-       } 
+    }
 }
 
 /* Flexbox para alinhar título e menu */
@@ -70,17 +62,17 @@ header {
 }
 
 header h1 {
-    margin: 0; 
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /
+    display: flex;/
 }
 
 
 nav ul li {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -90,14 +82,20 @@ nav ul li a {
 }
 
 article {
-    margin-bottom: 20px; 
-} 
-h2{text-align: center;}
-
-h2, h3, h4 {
-    margin-bottom: 10px; 
-    
+    margin-bottom: 20px;
 }
+
+h2 {
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    margin-bottom: 10px;
+
+}
+
 /* Estilização do main */
 /* main {
     padding: 20px;
@@ -110,57 +108,45 @@ h2, h3, h4 {
 
 } */
 /* Estilização dos botões */
-.btn-saiba-mais{
+.btn-saiba-mais {
     display: inline-block;
-    background-color: #9D9D9D; 
+    background-color: #9D9D9D;
     color: #fff;
     padding: 8px 15px;
-    margin-top: 10px; 
+    margin-top: 10px;
     text-decoration: none;
-    border-radius: 8px; 
-    transition: background-color 0.3s ease; 
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
     /* text-align: left; */
-}    
+}
 
-.btn-contato{  
+.btn-contato {
     background-color: #223044;
     color: #fff;
     padding: 8px 15px;
-    margin-top: 10px; 
+    margin-top: 10px;
     text-decoration: none;
-    border-radius: 8px; 
-    transition: background-color 0.3s ease; 
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
     padding-bottom: 5px;
-} 
+}
 
-.destaque{ /*refazer*/
-    height: 70vh; 
-    width: 100%;   
-    background-image: url(../imagens/background-image-02.jpg);
-       
+.destaque {
+    /*refazer*/
+    height: 500px;
+    width: 100%;
+    background-image: url(../imagens/DeWatermark.ai_1729858784319.png);
+
     background-size: cover;
-    background-repeat: no-repeat; 
-     /* background-position: center center; */
-    background-attachment: fixed;  
-    display: flex; 
-    flex-direction: column;      
-    justify-content: center;
-    align-items: center;      
-   
-    h2 { 
-        color: white;
-        text-align: center; 
-        font-size: 200px; 
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-attachment: fixed;
 
-        p{
-            color: white;
-        }
-    } 
-   
+
     /* background-size: cover; */
     /* background-attachment:fixed ; fixa o item */
     /* position: sticky;         */
-}   
+}
 
 /* .destaque{  
 
@@ -172,50 +158,45 @@ h2, h3, h4 {
     justify-content: center;
     align-items: center;      
 } */
-.padding-img{
+.padding-img {
     /* padding-left: 420px;  */
     /* padding-right: ; */
-  
-}  
+
+}
 
 /* .emexplo{
   
 } */
 
-.espacamento{
-    padding-left: 200px;  
-    padding-right: 200px;
+.espacamento {
+    /* padding-left: 200px;  
+    padding-right: 200px; */
     text-align: center;
 }
 
 
 
-.lista{
+.lista {
     text-align: left;
     padding-left: 60px;
 }
-.link-menu{
-  color: black;
+
+.link-menu {
+    color: black;
 }
 
-.btn-saiba-mais:hover, .btn-contato:hover {
+.btn-saiba-mais:hover,
+.btn-contato:hover {
     background-color: #417195;
 }
 
 /* Estilização do rodapé */
 footer {
-    background-color: #343333; 
+    background-color: #343333;
     color: #fff;
     padding: 20px 0;
-    text-align: center; 
-    height: 300px;
+    text-align: center;
 }
-
-.btn-botao1 {
-    display: flex;
-    justify-content: space-around;
-  
- }
 
 footer h3 {
     margin-bottom: 10px;
@@ -223,162 +204,157 @@ footer h3 {
 
 footer ul {
     list-style-type: none;
-    padding: 0; 
+    padding: 0;
 }
 
 footer ul li {
-    margin: 5px 0; 
+    margin: 5px 0;
 }
 
-a { text-decoration: none;
+a {
+    text-decoration: none;
     color: aliceblue;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     nav ul li {
-        display: block; 
-        margin: 5px 0; 
+        display: block;
+        margin: 5px 0;
     }
 
-    .btn-saiba-mais, .btn-contato {
+    .btn-saiba-mais,
+    .btn-contato {
         width: 100%;
         text-align: center;
     }
 }
-img { width: 750px;}
+
+img {
+    width: 750px;
+}
 
 
 /* Cards pagina index */
 
- .cards-container {
+.cards-container {
     color: white;
-
+    height: 219;
     margin-bottom: 30px;
     background-color: #273041;
     width: 350px;
-    border-radius: 5px ;
-    text-align: center; 
-   
-}  
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
 
-.centralizar {
-   text-align: left;
 }
 
-.exemplo{
+.card-suportes {
+    color: white;
+    height: 219;
+    margin-bottom: 30px;
+    background-color: #273041;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.centralizar {
+    text-align: left;
+}
+
+.exemplo {
     display: flex;
-    justify-content: space-around;     
-    
+    padding-top: 30px;
+    padding-bottom: 20px;
+
 }
 
 /* Estilização do h3 pagina index */
 .caixa1 {
     background-color: #223044;
-    color: white;    
-    /* padding: 30px; */ 
-    /* max-width: 650px; */
-    /* max-width: 650px;*/
-    
-    height: 13vh;
+    color: white;
+    height: 125px;
+    width: auto;
+
+    h3 {
+        padding-top: 10px;
+        ;
+    }
+
 }
 
 .caixa2 {
     background-color: #214e88;
-    color: white; 
-    height: 12vh; 
+    color: white;
+    height: 125px;
+    width: auto;
+
+    h3 {
+        padding-top: 20px;
+        ;
+    }
+
     /* max-width:  */
-    
+
 }
 
 /* Botão Contato pagina index */
 .contato {
     text-align: center;
+    padding: 30px;
+}
+
+.quem-somos {
+    font-size: 20px;
+    /*exemplo de font */
+}
+
+.artigo-servicos{
+display:flex; 
+padding-top: 30px;
+
 } 
 
-/* .content-1{
-    display: flex;  
-    padding-left: 80px;
-    padding-top: 20px;
-     line-height: 30px; 
-     
-    
-   section{
+.conteudo-servicos{
+padding-left:5vw ;
+/* background-color: #214e88; */
+} 
+
+.secao-card-servicos{ 
+    padding: 20px;
+    flex-direction: row;
+             
+    /* Habilitando o flexbox */
   
-   }
-}  
-.img-suporte{
-    width: 800px; 
+    justify-content:space-evenly;
+     display: flex;
+    align-items: center;
+    /* Quebra o container  caso não tenha mais espaço
+    para o layout lado lado.*/
+    flex-wrap: wrap; 
+    /*  lacuna  entre elementos  */
+    gap: 10px; 
+    flex:auto;
+}
+
+.card-servicos{
+    background-color:#273041 ;
+    color: white; 
+    width: 400px;
+    height: 220px;
+    margin-bottom: 5px;
+    border-radius: 4%; 
+
+    h4 ,p{
+     padding:10px ; 
+
+     h3{
+        text-align: center;
+     }
+    } 
+
     
-     height: 325px;
-     padding-left: 30px;
-     position: relative;
-} 
-.content-2{
-    display: flex;
-
-} */
-/* codigo heloisa */
-.btn-fotos {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 10px;
-} 
-
- 
-.texto {
-    flex: 1;
-} 
-.texto-estrategia{
-    line-height: 45px;
-}
- 
-.btn-fotos img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}   
-
-/* maycon */
-.btn-fotos-r img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-} 
-.img-edit{
-    height: 137px;
-    width: 25vw;
-} 
-.btn-fotos-r {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding-left: 100px;
-}
- 
-.separador{
-    border: solid 1px; 
-    padding-bottom: 10px;
-}
-
-.footer-bottom{
-    padding-top: 20px;
-} 
-.mapa-do-site{
-    padding-left:100px ;
-}
-
-/* responsividade */
-@media (max-width: 768px) {
-    .btn-fotos {
-        flex-direction: column;
-        align-items: center;
-    }
- 
-    .btn-fotos img {
-        max-width: 100%;
-    }
 }
