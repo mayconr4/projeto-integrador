@@ -16,13 +16,13 @@ body {
 header {
     background-color: white;
 
-    padding: 20px 0;
+    padding: 20px ;
 }
 
 .topo {
 
     z-index: 5;
-
+    display: flex;
     position: sticky;
     top: 0;
     background-color: white;
@@ -42,7 +42,7 @@ header {
 .link-menu {
     a {
         color: var(--cor-escura);
-        font-weight: bold;
+        /* font-weight: bold; */
         /* background-color: yellow; */
         height: 50px;
         display: flex;
@@ -53,12 +53,10 @@ header {
 
 /* Flexbox para alinhar título e menu */
 .limitador {
-    /* display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 20px;   */
-    width: 95vw;
-    margin: auto;
+  
+    width: 78vw;
+    margin: auto;        /* DEPOIS REVER ESTA PARTE MAYCON */
+    /* background-color: #273041; */
 }
 
 header h1 {
@@ -86,7 +84,8 @@ article {
 }
 
 h2 {
-    text-align: center;
+    text-align: center; 
+    font-size: 30px;
 }
 
 h2,
@@ -122,7 +121,8 @@ h4 {
 
 .btn-contato {
     background-color: #223044;
-    color: #fff;
+    color: #fff; 
+   
     padding: 8px 15px;
     margin-top: 10px;
     text-decoration: none;
@@ -133,33 +133,34 @@ h4 {
 
 .destaque {
     /*refazer*/
-    height: 500px;
+    height: 88vh;
     width: 100%;
-    background-image: url(../imagens/DeWatermark.ai_1729858784319.png);
+    background-image: url(../imagens/background-img-leonardo-ia.jpg);
 
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* background-position: center center; */
     background-attachment: fixed;
 
 
     /* background-size: cover; */
     /* background-attachment:fixed ; fixa o item */
-    /* position: sticky;         */
+    position: sticky;        
 }
 
-/* .destaque{  
-
-    height: 88vh; 
-    background-attachment:fixed ; 
+.destaque-img-body{  
+    width: 750px;
+    padding-left: 350px;
+    /* height: 88vh;  */
+    /* background-attachment:fixed ; 
     position: sticky;        
     display: flex; 
     flex-direction: column;      
     justify-content: center;
-    align-items: center;      
-} */
+    align-items: center;       */
+} 
 .padding-img {
-    /* padding-left: 420px;  */
+    padding-left: 420px; 
     /* padding-right: ; */
 
 }
@@ -174,6 +175,10 @@ h4 {
     text-align: center;
 }
 
+.card-texto-index{
+    padding-left: 380px; 
+    text-align: center;
+}
 
 
 .lista {
@@ -245,7 +250,13 @@ img {
     width: 350px;
     border-radius: 8px;
     text-align: center;
-    margin: auto;
+    margin: auto; 
+
+    ul,li{
+        line-height: 50px;  
+
+      
+    }
 
 }
 
@@ -258,11 +269,15 @@ img {
     border-radius: 8px;
     text-align: center;
     margin: auto;
-
+    
+    
+    ul,li{
+        line-height: 50px;
+    }
 }
 
 .centralizar {
-    text-align: left;
+    text-align: center;
 }
 
 .exemplo {
@@ -274,23 +289,49 @@ img {
 
 /* Estilização do h3 pagina index */
 .caixa1 {
-    background-color: #223044;
+    background-color: #214e88;
     color: white;
     height: 125px;
-    width: auto;
+    width: 1460px; 
 
     h3 {
         padding-top: 10px;
         ;
     }
 
-}
+} 
 
-.caixa2 {
+.caixa-quem-somos{
     background-color: #214e88;
     color: white;
     height: 125px;
-    width: auto;
+    width: 1460px;     
+    /* padding-top: 50px;        */
+    h3 {
+        padding-top: 15px;
+        ;
+    }
+}
+
+.quem-somos-container{
+     padding-left: 500px;
+     
+     p{
+        text-align: center;
+     }
+
+} 
+.espacamento-img{
+    padding-left: 600px;
+    max-width: 750px;
+}
+
+.caixa2 {
+    background-color: #223044;
+    color: white;
+    height: 125px;
+    width: 1460px; 
+    
 
     h3 {
         padding-top: 20px;
@@ -302,42 +343,67 @@ img {
 }
 
 /* Botão Contato pagina index */
-.contato {
+.contato { 
     text-align: center;
+    /* width: 95px; */
     padding: 30px;
 }
 
-.quem-somos {
-    font-size: 20px;
-    /*exemplo de font */
+
+.limitador-contedo{
+ width: 1460px;
+
+
 }
 
 .artigo-servicos{
 display:flex; 
-padding-top: 30px;
-
+padding-top: 30px;    
+padding-left: 200px;
 } 
 
 .conteudo-servicos{
-padding-left:5vw ;
-/* background-color: #214e88; */
-} 
+padding-left:2vw ; 
+ul li{
+    font-size: 18px;
+    line-height: 50px;
+}
+/* background-color: #214e88; */ 
+
+}  
+.hr-marcado{
+    width:1032px;
+    height: 1px;
+    border: solid gray;
+    /* padding-right:; */
+}
 
 .secao-card-servicos{ 
-    padding: 20px;
-    flex-direction: row;
+    /* padding: 20px; */
+    display: flex;
+    margin-bottom: 20px;
+    /* flex-direction: row; */
              
     /* Habilitando o flexbox */
   
-    justify-content:space-evenly;
-     display: flex;
-    align-items: center;
+    /* justify-content:space-evenly; */
+    /* align-items: center; */
     /* Quebra o container  caso não tenha mais espaço
     para o layout lado lado.*/
-    flex-wrap: wrap; 
+    /* flex-wrap: wrap;  */
      /* lacuna  entre elementos  */
-    gap: 10px; 
-    flex:auto;
+    gap: 25px; 
+    /* flex:auto; */
+} 
+
+.secao-card-servicos-2{
+ display: flex; 
+ /* padding: 20px; */
+ gap: 25px;
+} 
+
+.conteiner-card-servicos{
+    margin-left: 500px;
 }
 
 .card-servicos{
@@ -346,7 +412,8 @@ padding-left:5vw ;
     width: 400px;
     height: 220px;
     margin-bottom: 5px;
-    border-radius: 4%; 
+    border-radius: 4%;  
+    line-height: 45px;
 
     h4 ,p{
      padding:10px ; 
@@ -357,12 +424,83 @@ padding-left:5vw ;
     } 
 
     
-} 
+}  
 
-.espacamento-menu{
+.img-servicos{
+    
+        /* position: relative; */
+        /* margin-top: 15px; */
+    left: 0px;
+    right: 0px;
+    max-width: 300px;
+    
     
 }
 
-.logo{
+.btn-fotos {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+}
+ 
+.texto {
+    flex: 1;
+}
+ 
+.btn-fotos img {
+    max-width: 600px;
+    /* height: auto; */
+    border-radius: 10px;
+    object-fit: cover;
+} 
 
+.btn-botao1 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+ 
+}
+
+.btn-mapa {
+    margin-top: 40px;
+}
+
+.separador {
+    height: 150px;
+    margin-top: 10px;
+    width: 2px;
+    background-color: white;
+ 
+} 
+
+.mapa{
+    font-size: 25px;
+} 
+
+
+/* IMAGENS SUPORTE ESTILIZAÇÃO */
+.img-2{
+padding-right: 80px;
+width: 80%;
+} 
+.img-1{
+    
+} 
+.img-3{
+    padding-right: 80px;
+    width: 80%;
+} 
+.img-4{
+    margin-right: 20px; 
+    width: 80%;
+    height: 290px;
+} 
+
+.texto-edit{
+    padding-left: 600px;
+    
+} 
+.texto-edit-2{
+    line-height: 45px;
 }
