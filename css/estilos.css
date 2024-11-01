@@ -73,8 +73,9 @@
           max-width: 1000px;
           width: 100%;
           display: flex;
-          justify-content: space-between;
           align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
       }
   }
 
@@ -101,8 +102,6 @@
 
       a {
           color: var(--cor-escura);
-          margin: 30px;
-          /* gap: 10px;   */
           display: flex;
           justify-content: center;
           align-items: center;
@@ -112,6 +111,7 @@
   .links-menu.aberto {
       display: flex;
       flex-direction: column;
+      gap: 2rem;
       position: absolute;
       left: 0;
       right: 0;
@@ -202,7 +202,7 @@
   .cards-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       gap: 2rem;
 
   }
@@ -269,7 +269,7 @@
   }
 
   .quem-somos-cards {
-      background-color: var(--cor-clara);
+      background-color: var(--cor-card-escuro);
       padding: 0.5rem;
       color: var(--cor-clara);
       text-align: center;
@@ -292,7 +292,7 @@
   .contato {
       text-align: center; 
 
-      margin-top: 10px;
+      
 
       a {
           color: var(--cor-clara);
@@ -480,10 +480,7 @@ button:focus {
 
       .links-menu {
           display: flex;
-
-          li {
-              width: 100%;
-          }
+          gap: 1rem;
       }
 
       .menu {
@@ -533,4 +530,9 @@ button:focus {
               margin-left: 25px;
           }
       }
+  }
+
+
+  .ajuste{
+    padding: 2rem;
   }
