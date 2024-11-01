@@ -4,8 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Página Inicial - Engenharia Mecânica</title>  
+    <!-- importação de fonts raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+
+     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" 
+     rel="stylesheet"> 
+      <!-- importação google fonts readex pro  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+      
+       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+       
+       <link rel="stylesheet" href="css/estilos.css">
+    </head>
 
 <body>
     <header class="topo">
@@ -13,38 +28,40 @@
 
             <figure>
                 <a href="index.html">
-                    <img src="imagens/logo.png" alt="" style="width: 250px;  ">
+                    <img src="imagens/logo.png" alt="" style="width: 50%;">
                 </a>
                 <figcaption><a href="index.html"></a></figcaption>
-            </figure>
-
-            <nav class="menu">
-
+            </figure> 
+            <nav class="menu"> 
                 <h2 class="titulo-menu">
                     <a href=""> &equiv;</a>
-                </h2>
-
+                </h2> 
                 <ul class="links-menu">
                     <li><a href="index.html">Home</a> </li>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="quem-somos.html">Sobre nós</a></li>
                     <li><a href="servicos.html">Serviços</a> </li>
                     <li><a href="suporte.html">Suporte</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-
+    </header>                    
     <main>
+         <div class="destaque">
+            <h2>CrossLoop engeeering consultancy</h2>
+         </div>
 
-        <div>
-            <img src="imagens/img-11.png" alt="diagramção de consultoria">
-        </div>
 
-        <section class="conteudo-servicos">
-            <h2>Nossos Serviços</h2>
-
+       
+         
+         <div><h2>Nossos Serviços</h2></div> 
+         <section class="conteudo-servicos">
             <div>
+                <img src="imagens/img-11.png" alt="diagramção de consultoria">
+            </div>
+            
+
+            <div class="list-servicos">
                 <div>
                     <h3>Arquitetura de Processos e Soluções</h3>
                     <p>
@@ -135,28 +152,29 @@
     </main>
 
     <footer>
-
         <div class="footer-container">
-            <img class="btn-mapa" src="imagens/logo.png" alt="logo">
-
-            <div class="separador"></div>
-
+          <img class="btn-mapa" src="imagens/logo.png"  style="width: 60%;" alt="logo" />
+  
+          <div class="separador"></div>
+  
+          <div class="mapa-do-site">
+            <h2>Mapa Do Site</h2>
             <ul>
-                <p>Mapa Do Site</p>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-                <li><a href="servicos.html">Serviços </a> </li>
-                <li><a href="suporte.html">Suporte</a> </li>
-                <li><a href="contato.html">Contato </a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="quem-somos.html">Quem Somos</a></li>
+              <li><a href="servicos.html">Serviços </a></li>
+              <li><a href="suporte.html">Suporte</a></li>
+              <li><a href="contato.html">Contato </a></li>
             </ul>
+          </div>
+        </div>       
+        <hr>      
+        <div class="copyright">
+          <p>Copyright © 2024 Crossloop | Powered by CrossLoop</p>
         </div>
+      </footer>
 
-        <hr>
-
-        <div>
-            <p>Copyright © 2024 Crossloop | Powered by CrossLoop</p>
-        </div>
-    </footer>
+      <script src="js/menu.js"></script>
 </body>
 
 </html>
