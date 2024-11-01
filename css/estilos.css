@@ -269,7 +269,7 @@
   }
 
   .quem-somos-cards {
-      background-color: var(--cor-card-escuro);
+      background-color: var(--cor-clara);
       padding: 0.5rem;
       color: var(--cor-clara);
       text-align: center;
@@ -290,7 +290,9 @@
   }
 
   .contato {
-      text-align: center;
+      text-align: center; 
+
+      margin-top: 10px;
 
       a {
           color: var(--cor-clara);
@@ -421,7 +423,53 @@
   .conteudo-servicos {
       display: flex; 
       margin-top: 30px; 
-  }
+  } 
+
+  form {
+    max-width: 500px;
+    margin: auto;
+}
+ 
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+}
+ 
+form div {
+    margin-bottom: 1rem;
+}
+ 
+input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    padding: 6px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+ 
+textarea {
+    height: auto;
+}
+ 
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+ 
+button:hover,
+button:focus {
+    background-color: darkblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 
   @media screen and (min-width: 700px) {
